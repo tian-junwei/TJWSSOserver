@@ -1,4 +1,4 @@
-package tianjunwei.util;
+package com.tianjunwei.util;
 
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;

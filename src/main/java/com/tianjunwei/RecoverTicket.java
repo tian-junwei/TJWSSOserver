@@ -1,11 +1,11 @@
-package tianjunwei;
+package com.tianjunwei;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import tianjunwei.bean.Ticket;
+import com.tianjunwei.bean.Ticket;
 
 public class RecoverTicket implements Runnable {
 	

@@ -1,4 +1,4 @@
-package tianjunwei.servlet;
+package com.tianjunwei.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -20,9 +20,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import tianjunwei.RecoverTicket;
-import tianjunwei.bean.Ticket;
-import tianjunwei.util.DESUtils;
+import com.tianjunwei.RecoverTicket;
+import com.tianjunwei.bean.Ticket;
+import com.tianjunwei.util.DESUtils;
 
 /**
  * Servlet implementation class SSOAuth

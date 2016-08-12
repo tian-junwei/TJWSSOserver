@@ -1,4 +1,4 @@
-package tianjunwei.bean;
+package com.tianjunwei.bean;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
