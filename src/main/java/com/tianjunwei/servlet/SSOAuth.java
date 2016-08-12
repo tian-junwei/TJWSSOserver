@@ -37,6 +37,7 @@ public class SSOAuth extends HttpServlet {
 	/** 单点登录标记 */
 	private static Map<String, Ticket> tickets;
 	
+	
 	/** cookie名称 */
 	private String cookieName;
 	
@@ -194,7 +195,11 @@ public class SSOAuth extends HttpServlet {
 			String setCookieURL = request.getParameter("setCookieURL");
 			String gotoURL = request.getParameter("gotoURL");
 			
-			PrintWriter out = response.getWriter();
+			//修改页面跳转方式
+			response.sendRedirect(setCookieURL+"?gotoURL="+gotoURL+"&ticket="+encodedticketKey+"&expiry="+expiry);
+			
+			
+			/*PrintWriter out = response.getWriter();
 			out.print("<script type='text/javascript'>");
 			out.print("document.write(\"<form id='url' method='post' action='" + setCookieURL + "'>\");");
 			out.print("document.write(\"<input type='hidden' name='gotoURL' value='" + gotoURL + "' />\");");
@@ -202,7 +207,7 @@ public class SSOAuth extends HttpServlet {
 			out.print("document.write(\"<input type='hidden' name='expiry' value='" + expiry + "' />\");");
 			out.print("document.write('</form>');");
 			out.print("document.getElementById('url').submit();");
-			out.print("</script>");
+			out.print("</script>");*/
 		}
 	}
 
