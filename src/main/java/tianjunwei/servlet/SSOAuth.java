@@ -57,9 +57,8 @@ public class SSOAuth extends HttpServlet {
 	 */
 	public void init(ServletConfig config) throws ServletException {
 		accounts = new HashMap<String, String>();
-		accounts.put("zhangsan", "zhangsan");
-		accounts.put("lisi", "lisi");
-		accounts.put("wangwu", "wangwu");
+		accounts.put("admin", "admin");
+		accounts.put("tian", "tian");
 		
 		tickets = new ConcurrentHashMap<String, Ticket>();
 		
